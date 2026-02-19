@@ -1,0 +1,86 @@
+---
+const { question, options, correctIndex, explanation } = Astro.props;
+const id = `quiz-${Math.random().toString(36).slice(2)}`;
+---
+
+<div class="quiz" id={id}>
+<h3 class="question">{question}</h3>
+  <div class="options">
+    {options.map((opt, i) => (
+      <button type="button" data-index={i}>{opt}</button>
+    ))}
+  </div>
+
+  <p class="feedback"></p>
+</div>
+
+<script define:vars={{ id, correctIndex, explanation }}>
+  window.addEventListener("DOMContentLoaded", () => {
+    const root = document.getElementById(id);
+    if (!root) return;
+
+    const buttons = root.querySelectorAll("button");
+    const feedback = root.querySelector(".feedback");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const index = Number(btn.dataset.index);
+
+        buttons.forEach(b => b.classList.remove("correct", "wrong"));
+
+        if (index === correctIndex) {
+          btn.classList.add("correct");
+          feedback.textContent = `Korrekt. ${explanation}`;
+        } else {
+          btn.classList.add("wrong");
+          feedback.textContent = `Forkert. ${explanation}`;
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+
+.question {
+  padding-bottom: 16px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.quiz {
+  border: 1px solid var(--sl-color-gray-5);
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--sl-color-gray-5);
+  background: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+button.correct {
+  background: #d4edda;
+}
+
+button.wrong {
+  background: #f8d7da;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-weight: 500;
+}
+</style>

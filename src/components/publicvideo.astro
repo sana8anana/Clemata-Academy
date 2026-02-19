@@ -1,0 +1,26 @@
+---
+const { src, title } = Astro.props;
+---
+
+<div class="video-wrapper">
+  <video controls title={title}>
+    <source src={src} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<style>
+  .video-wrapper {
+    max-width: 800px;
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  video {
+    width: auto;
+    height: 500px;
+    display: block;
+    border-radius: 12px;
+  }
+</style>

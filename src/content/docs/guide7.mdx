@@ -1,0 +1,90 @@
+---
+title: Modul 7 - Oprettelse af ny medarbejder
+description: Sådan opretter du en medarbejder korrekt
+---
+
+import Quiz from '../../components/Quiz.astro';
+
+
+For at en medarbejder kan starte og få løn, skal Human Resource (HR) modtage de rigtige oplysninger og dokumenter først
+
+---
+
+### 1. Oplysninger der skal sendes til HR
+Servicemanager sender skriftligt:
+
+- Fulde navn
+- Adresse
+- CPR-nummer
+- Mail og telefonnummer
+- Reg. og kontonummer
+- Nationalitet
+
+---
+
+### 2. Dokumentation (skal medsendes)
+
+- Straffeattest
+- ID med billede (pas eller kørekort)
+- Sundhedskort
+
+**Hvis medarbejder ikke er EU-borger:**
+- Opholds- og arbejdstilladelse
+
+**Hvis EU-borger:**
+- EU-registreringsbevis
+
+**Hvis medarbejderen skal køre bil:**
+- Kørekort
+
+---
+
+### Vigtigt
+- Medarbejderen bliver **ikke oprettet før dokumentation er modtaget**
+- For at få løn samme måned skal medarbejderen oprettes **inden d. 20**
+
+---
+
+### Tildel medarbejder til kunde
+En medarbejder kan først:
+- se kundeinformation
+- bestille produkter
+
+når personen er **tildelt kunden**.
+
+Det er Servicemanagerens ansvar.
+
+---
+
+<Quiz
+  question="Hvornår bliver en ny medarbejder oprettet?"
+  options={[
+    "Når medarbejderen møder første dag",
+    "Når HR har modtaget den nødvendige dokumentation",
+    "Når kunden har godkendt"
+  ]}
+  correctIndex={1}
+  explanation="Medarbejderen oprettes først, når HR har modtaget de nødvendige dokumenter (bl.a. straffeattest og ID)."
+/>
+
+<Quiz
+  question="Hvad er deadline for at medarbejderen kan få løn samme måned?"
+  options={[
+    "Inden d. 1.",
+    "Inden d. 20.",
+    "Inden månedens sidste dag"
+  ]}
+  correctIndex={1}
+  explanation="For at medarbejderen kan få løn, skal oprettelsen være gennemført inden d. 20. hver måned."
+/>
+
+<Quiz
+  question="Hvorfor skal en serviceassistent/1. assistent tildeles en kunde?"
+  options={[
+    "Så de kan se kundeinformation og bestille produkter",
+    "Så de kan få adgang til HR-systemet",
+    "Så de automatisk får mere løn"
+  ]}
+  correctIndex={0}
+  explanation="Uden korrekt tildeling kan medarbejderen ikke se kundeinfo eller bestille produkter."
+/>

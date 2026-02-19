@@ -1,0 +1,139 @@
+---
+title: Modul 1 - Sygdom og reklamationer
+description: Det du absolut skal have styr på hver dag
+---
+
+import Quiz from '../../components/Quiz.astro';  
+
+Som servicemanager er du ansvarlig for den daglige drift i dit geografiske område (SIO). Ansvarsstrukturen kan forklares med dig øverst:
+
+![Dashboard](/images/Struktur.png)
+
+Fordi du har ansvar for 1. assistenter og serviceassistenter betyder det i praksis: **Hvis du ikke reagerer stopper driften.**
+
+
+Du styrer kommunikationen og er bindeleddet mellem kunder, medarbejdere (1.assistenter + serviceassistenter) og kontoret.  
+
+Derfor har nogle opgaver højeste prioritet. 
+<span style="color: #CC3333;"> **De røde markeringer** </span> viser hvor du skal være opmærksom i dette modul og kræver handling fra dig. 
+<span style="color: #99CC33;"> **De grønne markeringer** </span>  er status over reklamationer.
+
+![Dashboard](/images/Overblik.png)
+
+---
+
+## Hver dag
+
+### 1. Sygemeldinger 
+Start **altid** dagen med at tjekke fravær i systemet. Ved akut fravær tæt på mødetid skal medarbejderen kontakte dig direkte.
+
+![Dashboard](/images/SygDash.png)
+
+Når en medarbejder melder sig syg:
+- Du godkender fraværet i Clemata
+- Du finder en afløser
+- Opgaven må **aldrig** stå ubemandet
+
+Vi ser naturligvis gerne at der er så få sygemeldinger som mulig. Men du må **ikke**:
+- kræve diagnose
+- kræve dokumentation
+
+Kun HR kan bede om lægeerklæring i særtilfælde. Din opgave er blot at håndtere driften.
+
+---
+
+### 2. Reklamationer og kunder
+
+Når en kunde anmoder om reklamation, vil den komme op hos dig under "venter på reklamation"
+
+![Dashboard](/images/ReklamationDash.png)
+
+Du skal reagere hurtigt på reklamationer. Sørg for at læse kundens behov - er der brug for at tale med kunden? Det skal du vurdere når du læser kundens klager. 
+
+Du skal give kunden en tilbagemelding indenfor **2 timer.** Det betyder ikke at problemet skal være løst indenfor 2 timer, men kunden skal vide at du har set det og tager handling.  
+
+## Sådan håndteres en reklamation
+
+1. Start med at læse klagen
+2. Vurdér sagen: har kunden ret til reklamation eller tager de fejl. 
+
+### Hvis kunden har ret
+
+Vi tager udgangspunkt i serviceplanen. Hvis det vurderes at kundens udsagn ligger indenfor serviceplanens aftale skal du: 
+
+- Skrive hvordan problemet vil tackles og hvornår
+- Tildele opgaven til en medarbejder (enten 1. assistent eller serviceassistent)
+- Godkende når den er løst  
+
+Se et eksempel nedenfor
+
+<video controls width="640">
+  <source src="/videos/accepter reklamation.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+---
+
+### Hvis kunden tager fejl
+
+I tilfælde af at kundens reklamation rækker ud over serviceplanen, skal opgaven afvises men du skal forklare hvorfor. Kunden skal altid have en begrundelse. Du skal derfor:
+- Skrive hvorfor reklamationen afvises.
+- Afvise opgaven i systemet eller planlæg ekstra arbejde som aftalt med kunden.
+
+Se et eksempel nedenfor
+
+<video controls width="640">
+  <source src="/videos/afvis reklamation.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+Bottom line er: **Du må aldrig ignorere en reklamation. Læs ikke bare klagen - læs kunden, og tilpas din handling efter deres behov.**  
+
+---
+
+<Quiz
+  question="Hvad skal du starte din dag med?"
+  options={[
+    "Tjekke reklamationer",
+    "Tjekke sygemeldinger",
+    "Åbne kalenderen"
+  ]}
+  correctIndex={1}
+  explanation="Du starter med fravær, fordi ubemandede opgaver stopper driften."
+/>
+
+<Quiz
+  question="En medarbejder ringer 30 min før mødetid og melder sig syg. Hvad er din første handling?"
+  options={[
+    "Spørge hvad personen fejler",
+    "Finde en afløser",
+    "Skrive til HR"
+  ]}
+  correctIndex={1}
+  explanation="Din første opgave er at sikre bemanding. Driften må aldrig stoppe."
+/>
+
+
+<Quiz
+  question="En kunde opretter en reklamation. Hvornår skal kunden senest have en tilbagemelding?"
+  options={[
+    "Inden arbejdsdagen er slut",
+    "Indenfor 2 timer",
+    "Når problemet er løst"
+  ]}
+  correctIndex={1}
+  explanation="Kunden skal hurtigt mærke at sagen er set. Løsningen kan komme senere."
+/>
+
+
+<Quiz
+  question="En kunde har oprettet følgende reklamation: 'Jeg er så træt af at rydde op efter jer. Jeg gider det ikke mere' "
+  options={[
+    "I dette tilfælde er det en god ide at ringe til kunden og aftale det næste skridt",
+    "Ringer til medarbejderen og skælder dem ud",
+    "Giver en skriftlig tilbagemelding som f.eks. 'Vi ser på det i dag'."
+  ]}
+  correctIndex={0}
+  explanation="Kunden skal føle at de bliver taget seriøst - ellers mister de vores tillid. Det er din opgave at læse kundens behov og forstå dem gennem dialog."
+/>

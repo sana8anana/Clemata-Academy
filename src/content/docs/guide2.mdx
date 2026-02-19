@@ -1,0 +1,104 @@
+---
+title: Modul 2 - Ubemandede opgaver
+description: Det du absolut skal have styr på hver dag
+---
+
+import Quiz from '../../components/Quiz.astro';  
+
+Kalenderen skal være opdateret hver dag så dine medarbejdere kan følge arbejdstid, sted og opgaver
+
+
+
+Hvis en medarbejder:
+- er syg
+- har ferie
+- stopper
+
+bliver alle deres opgaver automatisk ubemandede. Du skal bemande dem igen. 
+
+![Dashboard](/images/UbemandetDash.png)
+
+De vises på dashboardet som vist øverst. Du kan også tilgå dem i kalender under "Vis ubemandede opgaver"  
+
+![Dashboard](/images/ubemandet.png)  
+
+Du kan koble en ny medarbejder på **enkelte opgaver** som vist på videoen
+
+<video controls width="640" poster="/images/ubemandet.png">
+  <source src="/videos/ubemandet.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+Hvis du vil tildele **alle opgaver på en gang** tilhørende en anden medarbejder, kan det gøres via dashboardet eller i sidepanelet under Opgaver > Ubemandede opgaver:  
+
+<video controls width="640" poster="/images/UbemandetDash.png">
+  <source src="/videos/TildelAlleOpgaver.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+Bemærk at når en serviceassistent har feriefridag(e), er det kun muligt at tildele opgaven til en 1. assistent. Systemet viser derfor kun 1. assistenter som mulige modtagere af opgaven. 
+
+---
+
+### Opdater kalenderen
+Kalenderen er medarbejdernes arbejdsplan. 
+
+Den skal altid være korrekt:
+- hvem arbejder hvor
+- hvornår
+- hvilke opgaver
+
+Hvis kalenderen er forkert udføres arbejdet forkert. 
+
+### Opret opgave
+
+Når en ny kunde oprettes eller eksisterende kunde skal have en ny opgave ind, aftaler du sammen med Driftchef eller servicechef, hvilke faste opgaver der skal oprettes i systemet.
+
+For at oprette opgaver, klikker du først på "Opret ny opgave" 
+
+![Dashboard](/images/OpretOpgave.png)  
+
+Herefter vælger du den rette type kategori. F.eks. hvis der skal oprettes en Abonnementopgave hver onsdag kl. 10. 
+
+<video controls width="640" poster="/images/OpretOpgave.png">
+  <source src="/videos/Opret opgave.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>  
+
+Hvis der er tale om periodiske opgaver, skal den ligeledes have den tilsvarende kategori og klikkes af ved "Periodisk".
+
+---
+
+<Quiz
+  question="Hvem kan opgaven kun tildeles til når en serviceassistent holder deres feriefridag (ikke ferie)?"
+  options={[
+    "En anden serviceassistent",
+    "Kun en 1. assistent",
+    "Kontoret"
+  ]}
+  correctIndex={1}
+  explanation="Ved feriefridag kan opgaven kun tildeles en 1. assistent."
+/>
+
+<Quiz
+  question="Hvornår bruger du 'tildel alle opgaver'?"
+  options={[
+    "Når én opgave mangler",
+    "Når mange en fast opgave mangler medarbejder",
+    "Aldrig"
+  ]}
+  correctIndex={1}
+  explanation="Funktionen bruges til hurtigt at bemande flere opgaver."
+/>
+
+
+<Quiz
+  question="Hvornår bruger du 'tildel alle opgaver til en medarbejder'?"
+  options={[
+    "Når én opgave mangler",
+    "Når mange en fast opgave mangler medarbejder",
+    "Aldrig"
+  ]}
+  correctIndex={1}
+  explanation="Funktionen bruges til hurtigt at bemande flere opgaver."
+/>

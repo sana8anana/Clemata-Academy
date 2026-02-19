@@ -1,0 +1,89 @@
+---
+title: Modul 4 - Serviceplan
+description: Sådan læser du serviceplanen korrekt
+---
+
+import Quiz from '../../components/Quiz.astro';
+
+
+Serviceplanen fortæller **præcis hvad der skal gøres og hvor ofte** hos kunden.  
+Hvis noget er uklart i hverdagen, er det **altid serviceplanen der gælder**.
+
+---
+
+### Sådan læser du serviceplanen
+
+Når du åbner serviceplanen, finder du følgende
+
+1. hvilket rum eller område opgaven gælder for  *(fx kontor, toilet, køkken, gang)*
+2. hvilke handlinger der skal udføres i rummet  *(fx støvsuge, aftørre borde, rengøre håndvask)*
+3. hvor ofte opgaven skal udføres. Der er daglige, ugentlige men også periodiske opgaver som udføres på bestemte datoer. 
+
+
+Tidspunktet for mødetid noteres, og er vigtig at overholde. Se eksempel forneden
+
+![Dashboard](/images/Arbejdstidspunkt.png)
+
+Periodiske opgaver kan eksempelvis beskrives med "1 x mdl - første uge i måneden" som vist forneden
+
+![Dashboard](/images/Periodisk.png)
+
+
+---
+
+I serviceplanen ser du følgende setup for hvert område/rum. 
+
+![Dashboard](/images/Lokaleoversigt.png)
+
+**SR:** Standard rengøring
+**GG:** Grundig gulv rengøring
+**GI:** Grundig inventar rengøring
+
+Tallene indikerer frekvensen. F.eks. for 'Toilet herre' er der standard rengøring + gulvvask hver dag, med inventar rengøring én gang om ugen.
+
+---
+
+## Dørmærkater 
+
+Dørmærkater fungerer som en "mini" serviceplan og kan gemmer sig bag døren. De hjælper serviceassistenterne med at aflæse hvilke dage de udfører den pågældende type rengøring. Her er der f.eks. fuld rengøring om fredagen + standard- og gulvrengøring man-tor. 
+
+![Dashboard](/images/Dørmærkat.png)
+
+
+
+
+
+---
+
+<Quiz
+  question="Hvis noget ikke står i serviceplanen, hvad gør du?"
+  options={[
+    "Forventer at serviceassistenten udfører opgaven",
+    "Ser bort fra det",
+    "Du gør som kunden siger"
+  ]}
+  correctIndex={1}
+  explanation="Hvis det ikke er en del af aftalen, skal det ikke udføres."
+/>
+
+<Quiz
+  question="Hvad betyder SR"
+  options={[
+    "Sanitet og universalrengøring",
+    "Skrub + Rens",
+    "Standard rengøring"
+  ]}
+  correctIndex={2}
+  explanation="SR står for standard rengøring. Læs altid serviceplanen for mere information af hvad SR dækker over."
+/>
+
+<Quiz
+  question="Hvad betyder tallene i serviceplanens lokalefortegnelse?"
+  options={[
+    "Antallet af dage i ugen hvor den pågældende rengøringstype skal udføres",
+    "Antal fridage for medarbejderen af den pågældende rengøringstype",
+    "Antal timer der skal gøres rent af pågældende rengøringstype"
+  ]}
+  correctIndex={0}
+  explanation="Det er antallet af dage i ugen."
+/>
