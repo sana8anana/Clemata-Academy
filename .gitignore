@@ -19,3 +19,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Ignore large raw video files (Cloudflare Pages max 25MB)
+public/videos/*.mp4
+public/videos/*.mov
