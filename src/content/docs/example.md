@@ -25,4 +25,4 @@ Inden vi går i gang med modulerne, er der 3 ting du skal gøre:
 
 På telefon og tablet kan du underskrive med touch og på browser skal du uploade billede
 
-Når du er færdig, kan du gå videre til 1. modul
+**Når du er færdig, kan du gå videre til 1. modul**
