@@ -1,110 +1,74 @@
-CLEMATTA ACADEMY
+SMP. ACADEMY
 
 Internt onboarding- og oplæringssystem
 
 Dette system bruges til oplæring af medarbejdere via moduler, videoer og quizzer.
 
-Formålet er, at virksomhedens IT afdeling selv kan:
+Formålet er, at virksomhedens IT afdeling kan:
 
-rette tekst
-
-udskifte billeder og videoer
-
-tilføje nye moduler
-
-vedligeholde akademiet
+1) rette tekst
+2) udskifte billeder og videoer
+3) tilføje nye moduler
+4) vedligeholde akademiet
 
 Start siden på din computer
 1. Installer programmet der kræves
-
 Installer Node.js (kun første gang):
 https://nodejs.org
 
 2. Åbn projektet
-
-Åbn mappen i VS Code
-
-Åbn Terminal → New Terminal
-
+- Åbn mappen i VS Code
+- Åbn Terminal → New Terminal
 3. Første opstart (kun én gang)
-
-Skriv:
-
-npm install
-
-Vent til den er færdig.
+ Skriv:
+- npm install
+- Vent til den er færdig.
 
 4. Start akademiet
-
 Skriv:
-
-npm run dev (det skal du skrive hver gang du vil)
-
+- npm run dev (det skal du skrive hver gang du vil lave en lokal visning - bemærk det opdaterer ikke den reelle side. Det beskriver jeg længere nede)
 
 Åbn derefter:
-
-http://localhost:4321
+http://localhost:4321  (eller tryk på linket i terminalen mens du holder ctrl nede)
 
 
 Nu kan du se og redigere siden lokalt.
 
-Redigering af indhold
-Hvor ligger modulerne?
+Redigering af indhold:
+Alle moduler ligger her: src/content/docs/
 
-Alle moduler ligger her:
+Hver fil er ét modul i akademiet som f.eks.:
 
-src/content/docs/
-
-
-Hver fil er ét modul i akademiet:
-
-guide1.mdx
-guide2.mdx
-guide3.mdx
+guide1.mdx (=modul 1)
+guide2.mdx (=modul 2)
+guide3.mdx (=modul 3)
 
 Sådan ændrer du tekst
 
 Åbn en .mdx fil
-
-Ret teksten
-
-Gem filen
-
-Opdater siden i browseren
+1) Ret teksten
+2) Gem filen
+3) Opdater siden i browseren
 
 Du kan ikke ødelægge systemet ved at ændre almindelig tekst.
 
-Billeder
-Tilføj nyt billede
+Hvis man vil tilføke billeder og/eller videoer:
 
-Læg billedet her:
-
-public/images/
-
-
-Indsæt i modul:
-
+BILLEDER:
+Læg billedet i denne mappe i sidepanelet: public/images/
+Indsæt i modul - bare erstat navn på filen hvor der nedenfor står 'filnavn':
 ![Beskrivelse](/images/filnavn.png)
 
-Videoer
-Tilføj ny video
+VIDEOER
+Læg videoen ind i denne mappe: public/videos/
 
-Læg videoen her:
-
-public/videos/
-
-
-Indsæt i modul:
-
+Indsæt i modulet (f.eks. i guide2):
 <Video src="/videos/filnavn.mp4" />
 
-Opret et nyt modul
-
+OPRETTELSE AF NYT MODUL
 Kopiér en eksisterende fil i src/content/docs
-
 Omdøb den (fx guide8.mdx)
-
-Ret toppen:
+Ret toppen til f.eks. for at den hedder det rigtige:
 
 ---
 title: Modul 8 - Titel
@@ -114,8 +78,7 @@ description: Kort forklaring
 
 Modulet vises automatisk i systemet.
 
-Quiz spørgsmål
-
+QUIZ SPØRGSMÅL:
 Quizzer redigeres direkte i modulet:
 
 <Quiz
@@ -126,20 +89,19 @@ Quizzer redigeres direkte i modulet:
 />
 
 Hvis siden stopper med at virke
-
 Luk terminalen og start igen:
 
-npm run dev
+npm run dev -c 
 
-Opdatering af online side (deployment)
+Opdatering af online side (deployment) af https://clemata-academy.pages.dev/:
 
-Når I har adgang til hosting:
+kopier og sæt følgende følgende ind i terminalen i VS code:
+git add -A
+git commit -m "Update content" 
+git push
 
-Upload ændringer
+Giv den 10-15 minutter; så skulle siden gerne være oppe
 
-Tryk deploy
-
-Siden opdateres automatisk
 
 Ingen programmering er nødvendig.
 
@@ -155,13 +117,8 @@ src/components/
   → quiz og video system (skal normalt ikke ændres)
 
 Ansvar efter aflevering
-
 Virksomheden ejer systemet og kan frit:
-
-ændre indhold
-
-udvide moduler
-
-vedligeholde oplæringsmateriale
-
-Systemet er bygget, så daglig drift ikke kræver udvikler.
+- ændre indhold
+- udvide moduler
+- vedligeholde oplæringsmateriale
+- Systemet er bygget, så daglig drift ikke kræver udvikler.
