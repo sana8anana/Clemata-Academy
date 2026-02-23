@@ -7,6 +7,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'SMP Academy',
+			logo: {
+				src: "assets/logo.png",
+			},
 			components: {
         	// Override the default `Header` component.
         	Header: '/src/components/Header.astro',
