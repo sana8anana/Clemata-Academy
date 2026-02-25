@@ -6,9 +6,9 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'SMP Academy',
+			title: ' ',
 			logo: {
-				src: "assets/logo.png",
+				src: '/src/assets/logo.png',
 			},
 			components: {
         	// Override the default `Header` component.

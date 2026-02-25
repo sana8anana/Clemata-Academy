@@ -5,9 +5,6 @@ const { question, options, correctIndex, explanation } = Astro.props;
 const id = `quiz-${Math.random().toString(36).slice(2)}`;
 ---
 
----
-// Dette komponent er quiz komponenten, som viser et spørgsmål, flere svarmuligheder og giver feedback på, om det valgte svar er korrekt eller forkert. Det bruger Astro's props til at modtage data og JavaScript til at håndtere brugerinteraktionen.
----
 
 
 <div class="quiz" id={id}>
