@@ -1,6 +1,6 @@
 SMP. ACADEMY
 
-Internt onboarding- og oplæringssystem
+Internt onboarding- og oplæringssystem (ved astro framework og cloudflare til at deploy på https://clemata-academy.pages.dev/)
 
 Dette system bruges til oplæring af medarbejdere via moduler, videoer og quizzer.
 
@@ -111,14 +111,13 @@ public/
   videos/   → videoer
 
 src/content/docs/
-  → alle undervisningsmoduler
+  - alle undervisningsmoduler (guide 1-7)
 
 src/components/
-  → quiz og video system (skal normalt ikke ændres)
+  - quiz og video system 
 
 Ansvar efter aflevering
 Virksomheden ejer systemet og kan frit:
 - ændre indhold
 - udvide moduler
 - vedligeholde oplæringsmateriale
-- Systemet er bygget, så daglig drift ikke kræver udvikler.
